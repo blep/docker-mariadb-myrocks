@@ -25,3 +25,4 @@ docker run --rm -it --network=host blep/docker-mariadb-myrocks:10.3 mysql -h 127
 # once connected, types command below and RocksDB should show
 show plugins;
 ```
+
