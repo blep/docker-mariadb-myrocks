@@ -5,7 +5,7 @@ See official [MariaDB](https://hub.docker.com/_/mariadb/) documentation.
 
 This installs MyRocks DB engine as recommended in https://github.com/docker-library/mariadb/issues/135.
 
-Trusted build image on [dockerhub](https://cloud.docker.com/repository/registry-1.docker.io/blep/docker-mariadb-myrocks)
+Trusted build image on [dockerhub](https://cloud.docker.com/repository/docker/blep/docker-mariadb-myrocks)
 
 ## Testing
 
@@ -25,4 +25,3 @@ docker run --rm -it --network=host blep/docker-mariadb-myrocks:10.3 mysql -h 127
 # once connected, types command below and RocksDB should show
 show plugins;
 ```
-
