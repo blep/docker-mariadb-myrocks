@@ -14,13 +14,13 @@ Starts the server:
 (notes we are using `--network=host` to make it easy to connect with the client. Don't use this in production.)
 
 ```
-docker run --rm --name myrocks --network=host -e MYSQL_ROOT_PASSWORD=secret docker-mariadb-myrocks:10.3
+docker run --rm --name myrocks --network=host -e MYSQL_ROOT_PASSWORD=secret blep/docker-mariadb-myrocks:10.3
 ```
 
 Connect with the client:
 
 ```
-docker run --rm -it --network=host docker-mariadb-myrocks:10.3 mysql -h 127.0.0.1 -P3306 -u root -psecret
+docker run --rm -it --network=host blep/docker-mariadb-myrocks:10.3 mysql -h 127.0.0.1 -P3306 -u root -psecret
 
 # once connected, types command below and RocksDB should show
 show plugins;
